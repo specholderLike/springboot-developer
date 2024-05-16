@@ -1,0 +1,20 @@
+<!-- 댓글 목록 뷰 페이지-->
+<!-- 댓글 목록 전체 보여주는 영역 -->
+<div id="comments-list">
+    {{#commentDtos}}
+<!-- 조회 댓글 목록 댓글에서 하나씩 꺼냄/순회 -->
+        <div class="card m-2" id="comments-{{id}}">
+
+            <!--  댓글 내에 헤더 영역  -->
+            <div class="card-header">
+            <!-- 닉네임 보여주기 -->
+                {{nickname}}
+            </div>
+
+            <!--  댓글 내에 본문 영역  -->
+            <div class="card-body">
+                {{body}}
+            </div>
+        </div>
+    {{/commentDtos}}
+</div>
